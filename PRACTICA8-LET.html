@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclarar una Variable Usando var</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 10;
+// Aquí x es 10
+
+{  
+var x = 2;
+// Aquí x es 2
+}
+
+// Aquí x es 2
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<h2>Redeclarar una Variable Usando let</h2>
+
+<p id="demo1"></p>
+
+<script>
+let x = 10;
+// Aquí x es 10
+
+{  
+  let x = 2;
+  // Aquí x es 2
+}
+
+// Aquí x es 10
+document.getElementById("demo1").innerHTML = x;
+</script>
+
+<h2>JavaScript let</h2>
+
+<p>Redeclarar una variable de JavaScript con <b>var</b> está permitido en cualquier lugar de un programa:</p>
+
+<p id="demo2"></p>
+
+<script>
+var x = 2;
+// Ahora x es 2
+
+var x = 3;
+// Ahora x es 3
+
+document.getElementById("demo2").innerHTML = x;
+</script>
+
+<p>Redeclarar una variable con <b>let</b>, en otro ámbito o en otro bloque, está permitido:</p>
+
+<p id="demo3"></p>
+
+<script>
+let x = 2;   // Permitido
+
+{
+  let x = 3;   // Permitido
+}
+
+{
+  let x = 4;   // Permitido
+}
+document.getElementById("demo3").innerHTML = x;
+</script>
+
+<h2>Elevación en JavaScript</h2>
+
+<p>Con <b>var</b>, puedes usar una variable antes de declararla:</p>
+
+<p id="demo4"></p>
+
+<script>
+carName = "Volvo";
+document.getElementById("demo4").innerHTML = carName;
+var carName;
+</script>
+
+<p>Con <b>let</b>, no puedes usar una variable antes de declararla.</p>
+<p id="demo5"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo5").innerHTML = err;
+}
+</script>
+
+</body>
+</html>

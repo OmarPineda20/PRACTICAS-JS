@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+
+    <p id="demo2"></p>
+
+    <script>
+        const person2 = {
+            firstName: "Omar",
+            lastName: "Pineda",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("demo2").innerHTML = person2.fullName();
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+        // Create an Object
+        const person3 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("demo3").innerHTML = person3.fullName;
+    </script>
+
+    <p id="demo4"></p>
+
+    <script>
+        // Create an Object
+        const person4 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+        };
+
+        // Add a Method
+        person4.name = function () {
+            return this.firstName + " " + this.lastName;
+        };
+
+        // Display Object Data
+        document.getElementById("demo4").innerHTML =
+            "My father is " + person4.name(); 
+    </script>
+
+    <p id="demo5"></p>
+
+    <script>
+        // Create an Object
+        const person5 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+        };
+
+        // Add a Method
+        person5.name = function () {
+            return (this.firstName + " " + this.lastName).toUpperCase();
+        };
+
+        // Display Object Data
+        document.getElementById("demo5").innerHTML =
+            "My father is " + person5.name(); 
+    </script>
+
+</body>
+
+</html>

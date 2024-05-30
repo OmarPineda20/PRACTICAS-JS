@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Párrafo cambiado.";
+        }
+    </script>
+</head>
+<body>
+
+<h2>JavaScript en el Cuerpo</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Mi Primer JavaScript";
+</script>
+
+
+<h3>JavaScript Demo en la Cabecera</h3>
+
+<button type="button" onclick="myFunction()">Pruébalo</button>
+
+
+<h2>JavaScript Demo en el Cuerpo</h2>
+
+<button type="button" onclick="myFunction()">Pruébalo</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Párrafo cambiado.";
+}
+</script>
+
+
+<h2>JavaScript Externo Demo</h2>
+
+<button type="button" onclick="myFunction()">Pruébalo</button>
+
+<p>Este ejemplo enlaza a "miScript.js".</p>
+<p>(myFunction está almacenada en "miScript.js")</p>
+
+<script src="WHERE TO.js"></script>
+
+
+<h2>JavaScript Externo</h2>
+
+<button type="button" onclick="myFunction()">Haz clic</button>
+
+<p>Este ejemplo utiliza una URL web completa para enlazar a "miScript.js".</p>
+<p>(myFunction está almacenada en "miScript.js")</p>
+
+<script src="https://www.w3schools.com/js/WHERE TO.js"></script>
+</body>
+</html>

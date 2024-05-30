@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JavaScript String</h1>
+    <h2>The charAt() Method</h2>
+
+    <p>The charAt() method returns the character at a given position in a string:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var text = "HELLO WORLD";
+        document.getElementById("demo").innerHTML = text.charAt(0);
+    </script>
+
+    <h1>JavaScript String</h1>
+    <h2>The charCodeAt() Method</h2>
+
+    <p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        let text2 = "HELLO WORLD";
+        document.getElementById("demo2").innerHTML = text2.charCodeAt(0);
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo3"></p>
+
+    <script>
+        let text3 = "Apple, Banana, Kiwi";
+        let part = text3.slice(7, 13);
+        document.getElementById("demo3").innerHTML = part; 
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>Convert string to upper case:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo4">Hello World!</p>
+
+    <script>
+        function myFunction() {
+            let text4 = document.getElementById("demo4").innerHTML;
+            document.getElementById("demo4").innerHTML =
+                text4.toUpperCase();
+        }
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>Convert string to lower case:</p>
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo5">Hello World!</p>
+
+    <script>
+        function myFunction2() {
+            let text5 = document.getElementById("demo5").innerHTML;
+            document.getElementById("demo5").innerHTML =
+                text5.toLowerCase();
+        }
+    </script>
+
+    <h1>JavaScript String</h1>
+    <h2>The concat() Method</h2>
+
+    <p>The concat() method joins two or more strings:</p>
+
+    <p id="demo6"></p>
+
+    <script>
+        let text6 = "Hello";
+        let text7 = "World!";
+        let text8 = text6.concat(" ", text7);
+        document.getElementById("demo6").innerHTML = text8;
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction3()">Try it</button>
+
+    <p id="demo7">Please visit Microsoft!</p>
+
+    <script>
+        function myFunction3() {
+            let text9 = document.getElementById("demo7").innerHTML;
+            document.getElementById("demo7").innerHTML =
+                text9.replace("Microsoft", "W3Schools");
+        }
+    </script>
+
+</body>
+
+</html>

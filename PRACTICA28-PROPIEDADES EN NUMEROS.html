@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+<h2>The EPSILON Property</h2>
+
+<p>The difference between 1 and the smallest floating point number greater than 1, in JavaScript is:</p>
+<p id="demo"></p>
+
+<script>
+let x = Number.EPSILON;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<h2>The MAX_VALUE Property</h2>
+
+<p>The largest possible number in JavaScript is:</p>
+<p id="demo2"></p>
+
+<script>
+let x2 = Number.MAX_VALUE;
+document.getElementById("demo2").innerHTML = x2;
+</script>
+
+<p>Using a Number property on a variable, or value, will return undefined:</p>
+
+<p id="demo3"></p>
+
+<script>
+let x3 = 6;
+document.getElementById("demo3").innerHTML = x3.MAX_VALUE;
+</script>
+
+<h2>The MIN_VALUE Property</h2>
+
+<p>The smallest number possible in JavaScript is:</p>
+<p id="demo4"></p>
+
+<script>
+let x4 = Number.MIN_VALUE;
+document.getElementById("demo4").innerHTML = x4;
+</script>
+
+<h2>The POSITIVE_INFINITY Property</h2>
+
+<p id="demo5"></p>
+
+<script>
+let x5 = Number.POSITIVE_INFINITY;
+document.getElementById("demo5").innerHTML = x5;
+</script>
+
+<p>POSITIVE_INFINITY is returned on overflow:</p>
+<p id="demo6"></p>
+
+<script>
+let x6 = 1 / 0;
+document.getElementById("demo6").innerHTML = x6;
+</script>
+
+<h2>The NEGATIVE_INFINITY Property</h2>
+
+<p></p>
+
+<p id="demo7"></p>
+
+<script>
+let x7 = Number.NEGATIVE_INFINITY;
+document.getElementById("demo7").innerHTML = x7;
+</script>
+
+<h2>NAN</h2>
+<p>NaN is a JavaScript reserved word for a number that is not a legal number.</p>
+<p id="demo8"></p>
+
+<script>
+document.getElementById("demo8").innerHTML = Number.NaN;
+</script>
+
+</body>
+</html>

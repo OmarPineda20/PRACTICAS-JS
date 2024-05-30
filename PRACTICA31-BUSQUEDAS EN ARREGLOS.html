@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>BUSQUEDAS EN ARREGLOS</h1>
+<h2>Método IndexOf()</h2>
+
+<p id="demo"></p>
+
+<script>
+const frutas = ["Manzana", "Naranja", "Manzana", "Mango"];
+let posicion = frutas.indexOf("Manzana") + 1;
+
+document.getElementById("demo").innerHTML = "Manzana se encuentra en la posición " + posicion;
+</script>
+
+<h2>Método lastIndexOf()</h2>
+<p id="demo2"></p>
+
+<script>
+const frutas2 = ["Manzana", "Naranja", "Manzana", "Naranja"];
+let posicion2 = frutas2.lastIndexOf("Naranja") + 1;
+
+document.getElementById("demo2").innerHTML = "Naranja se encuentra en la posición " + posicion2;
+</script>
+
+<h2>Método "The includes"()</h2>
+
+<p>Revisar si el arreglo frutas3 contiene el elemento "Mango":</p>
+
+<p id="demo3"></p>
+
+<p><strong>Nota:</strong> Este método no está soportado en Edge13 (ni versiones anteriores).</p>
+
+<script>
+const frutas3 = ["Plátano", "Naranja", "Manzana", "Mango"];
+document.getElementById("demo3").innerHTML = frutas3.includes("Mango");
+</script>
+
+<h2>Método Find</h2>
+
+<p id="demo4"></p>
+
+<script>
+const numeros = [4, 9, 16, 25, 29];
+let first = numeros.find(funNum);
+
+document.getElementById("demo4").innerHTML = "El primer número después de 18 es " + first;
+
+function funNum(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<h2>Método FindIndex()</h2>
+
+<p id="demo5"></p>
+
+<script>
+const numbers = [4, 9, 16, 25, 29];
+
+document.getElementById("demo5").innerHTML = "El primer número despues de 18 tiene index " + numbers.findIndex(funNum);
+
+function funNum(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<h2>The findLast() Method</h2>
+
+<p id="demo6"></p>
+
+<script>
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let high = temp.findLast(x => x > 40);
+
+document.getElementById("demo6").innerHTML = "The last temperature over 40 was " + high;
+</script>
+
+<h2>The findLastIndex() Method</h2>
+
+<p id="demo7"></p>
+
+<script>
+const temp2 = [27, 28, 30, 40, 42, 35, 30];
+let pos = temp.findLastIndex(x => x > 40);
+
+document.getElementById("demo7").innerHTML = "The last temperature over 40 was in position " + pos;
+</script>
+
+</body>
+</html>

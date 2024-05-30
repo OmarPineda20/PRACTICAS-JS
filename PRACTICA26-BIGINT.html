@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Integer and BigInt</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 9999999999999999;
+let y = BigInt("9999999999999999");
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+<h2>Create a BigInt</h2>
+
+<p id="demo2"></p>
+
+<script>
+let x2 = 123456789012345678901234567890n;
+let y2 = BigInt("123456789012345678901234567890");
+document.getElementById("demo2").innerHTML = x2 + "<br>" + y2;
+</script>
+
+<h2>BigInt typeof</h2>
+
+<p>The typeof a BigInt is:</p>
+<p id="demo3"></p>
+
+<script>
+let x3 = BigInt("9999999999999999");
+document.getElementById("demo3").innerHTML = typeof x3;
+</script>
+
+<h2>BigInt Multiply</h2>
+<p>Operators that can be used a Number can be used on a BigInt.</p>
+<p id="demo4"></p>
+
+<script>
+let x4 = 9007199254740995n;
+let y4 = 9007199254740995n;
+let z = x4 * y4;
+
+document.getElementById("demo4").innerHTML = z; 
+</script>
+
+<h2>BigInt Divide</h2>
+
+<p>A BigInt can not have decimals.</p>
+<p>Cannot mix BigInt and other types, use explicit conversions.</p>
+<p id="demo5"></p>
+
+<script>
+let x5 = 5n;
+let y5 = Number(x5) / 2;
+
+document.getElementById("demo5").innerHTML = y5; 
+</script>
+
+<h2>Hex, Octal and Binary</h2>
+
+<p id="demo6"></p>
+
+<script>
+let hex = 0x20000000000003n;
+let oct = 0o400000000000000003n;
+let bin = 0b100000000000000000000000000000000000000000000000000011n;
+
+document.getElementById("demo6").innerHTML = hex + "<br>" + oct + "<br>" + bin; 
+</script>
+
+<h2>Integer Precision</h2>
+
+<p>Is 9007199254740992 equal to 9007199254740993?</p>
+
+<p id="demo7"></p>
+
+
+<script>
+let x6 = 9007199254740992 === 9007199254740993;
+document.getElementById("demo7").innerHTML = x6;
+</script>
+
+<h2>Number Object Properties</h2>
+
+<p>MAX_SAFE_INTEGER</p>
+
+<p id="demo8"></p>
+
+<script>
+let  x7 = Number.MAX_SAFE_INTEGER;
+document.getElementById("demo8").innerHTML = x7;
+</script>
+
+<p>MIN_SAFE_INTEGER</p>
+
+<p id="demo9"></p>
+
+<script>
+let  x8 = Number.MIN_SAFE_INTEGER;
+document.getElementById("demo9").innerHTML = x8;
+</script>
+
+</body>
+</html>

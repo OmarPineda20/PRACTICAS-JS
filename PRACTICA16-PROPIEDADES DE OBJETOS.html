@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+
+        document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+    </script>
+
+    <p id="demo2"></p>
+
+    <script>
+        const person2 = {
+            firstname: "Alex",
+            lastname: "Doe",
+            age: 40,
+            eyecolor: "blue"
+        };
+
+        document.getElementById("demo2").innerHTML = person2["firstname"] + " is " + person2["age"] + " years old.";
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+        const person3 = {
+            firstName: "Abel",
+            lastName: "Doe",
+            age: 21
+        };
+
+        let x = "firstName";
+        let y = "age";
+        document.getElementById("demo3").innerHTML = person3[x] + " is " + person3[y] + " years old.";
+    </script>
+
+    <p id="demo4"></p>
+
+    <script>
+        const person4 = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+
+        person4.nationality = "English";
+        document.getElementById("demo4").innerHTML =
+            person4.firstname + " is " + person4.nationality + ".";
+    </script>
+
+    <p id="demo5"></p>
+
+    <script>
+        const person5 = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+
+        delete person5.age;
+
+        document.getElementById("demo5").innerHTML =
+            person5.firstname + " is " + person5.age + " years old.";
+    </script>
+
+    <p id="demo6"></p>
+
+    <script>
+        const person6 = {
+            firstname: "Pineda",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+
+        delete person6["age"];
+
+        document.getElementById("demo6").innerHTML =
+            person6.firstname + " is " + person6.age + " years old.";
+    </script>
+
+</body>
+
+</html>

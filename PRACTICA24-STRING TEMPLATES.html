@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates use back-ticks (``) to define a string:</p>
+
+    <p id="demo"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let text = `Hello world!`;
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>With back-ticks, you can use both single and double quotes inside a string:</p>
+
+    <p id="demo2"></p>
+
+    <p>Templates not supported in Internet Explorer.</p>
+
+    <script>
+        let text2 = `He's often called "Johnny"`;
+        document.getElementById("demo2").innerHTML = text2;
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates allow variables in strings:</p>
+
+    <p id="demo3"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let firstName = "John";
+        let lastName = "Doe";
+
+        let text3 = `Welcome ${firstName}, ${lastName}!`;
+
+        document.getElementById("demo3").innerHTML = text3;
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates allow variables in strings:</p>
+
+    <p id="demo4"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let price = 10;
+        let VAT = 0.25;
+        let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+        document.getElementById("demo4").innerHTML = total;
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates allow variables in strings:</p>
+
+    <p id="demo5"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let header = "Template Strings";
+        let tags = ["template strings", "javascript", "es6"];
+
+        let html = `<h2>${header}</h2><ul>`;
+
+        for (const x of tags) {
+            html += `<li>${x}</li>`;
+        }
+
+        html += `</ul>`;
+        document.getElementById("demo5").innerHTML = html;
+    </script>
+
+</body>
+
+</html>

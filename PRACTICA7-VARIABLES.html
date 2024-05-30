@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Variables en JavaScript</h1>
+
+<p>En este ejemplo, x, y, y z no están declarados.</p>
+<p>Se declaran automáticamente cuando se usan por primera vez.</p>
+
+<p id="demo"></p>
+
+<script>
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML =
+"El valor de z es: " + z;
+</script>
+
+<p>En este ejemplo, x, y, y z son variables.</p>
+
+<p id="demo1"></p>
+
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo1").innerHTML =
+"El valor de z es: " + z;
+</script>
+
+<p id="demo2"></p>
+
+<script>
+let x = 5;
+let y = 6;
+let z = x + y;
+document.getElementById("demo2").innerHTML =
+"El valor de z es: " + z;
+</script>
+
+<p id="demo3"></p>
+
+<script>
+const x = 5;
+const y = 6;
+const z = x + y;
+document.getElementById("demo3").innerHTML =
+"El valor de z es: " + z;
+</script>
+
+<p>En este ejemplo, price1, price2, y total son variables.</p>
+
+<p id="demo4"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("demo4").innerHTML =
+"El total es: " + total;
+</script>
+
+<p>Las cadenas se escriben con comillas.</p>
+<p>Los números se escriben sin comillas.</p>
+
+<p id="demo5"></p>
+
+<script>
+const pi = 3.14;
+let person = "John Doe";
+let answer = '¡Sí, lo soy!';
+
+document.getElementById("demo5").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+<p>Crea una variable, asígnale un valor y muéstrala:</p>
+
+<p id="demo6"></p>
+
+<script>
+let carName = "Volvo";
+document.getElementById("demo6").innerHTML = carName;
+</script>
+
+<p>Puedes declarar muchas variables en una sola instrucción.</p>
+
+<p id="demo7"></p>
+
+<script>
+//let person = "John Doe", carName = "Volvo", price = 200;
+document.getElementById("demo7").innerHTML = carName;
+</script>
+
+<p id="demo8"></p>
+
+<script>
+//let person = "John Doe",
+//carName = "Volvo",
+price = 200;
+document.getElementById("demo8").innerHTML = carName;
+</script>
+
+<p>Una variable sin un valor tiene el valor de:</p>
+<p id="demo9"></p>
+
+<script>
+//let carName;
+document.getElementById("demo9").innerHTML = carName;
+</script>
+
+<p>Si vuelves a declarar una variable de JavaScript, no perderá su valor.</p>
+
+<p id="demo10"></p>
+
+<script>
+//var carName = "Volvo";
+//var carName;
+document.getElementById("demo10").innerHTML = carName;
+</script>
+
+<h1>Variables en JavaScript</h1>
+
+<p>El resultado de sumar 5 + 2 + 3 es:</p>
+<p id="demo11"></p>
+
+<script>
+let x = 5 + 2 + 3;
+document.getElementById("demo11").innerHTML = x;
+</script>
+
+<p>El resultado de sumar "John" + " " + "Doe" es:</p>
+<p id="demo12"></p>
+
+<script>
+let x = "John" + " " + "Doe";
+document.getElementById("demo12").innerHTML = x;
+</script>
+
+<p>El resultado de sumar "5" + 2 + 3 es:</p>
+<p id="demo13"></p>
+
+<script>
+let x = "5" + 2 + 3;
+document.getElementById("demo13").innerHTML = x;
+</script>
+
+<p>El resultado de sumar 2 + 3 + "5" es:</p>
+<p id="demo14"></p>
+
+<script>
+let x = 2 + 3 + "5";
+document.getElementById("demo14").innerHTML = x;
+</script>
+
+<p>El signo de dólar se trata como una letra en los nombres de JavaScript.</p>
+
+<p id="demo15"></p>
+
+<script>
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("demo15").innerHTML = $$$ + $myMoney;
+</script>
+
+<p>El guion bajo se trata como una letra en los nombres de JavaScript.</p>
+
+<p id="demo16"></p>
+
+<script>
+let _x = 2;
+let _100 = 5;
+
+document.getElementById("demo16").innerHTML = _x + _100;
+</script>
+
+</body>
+</html>

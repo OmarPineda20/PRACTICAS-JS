@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sentencias de JavaScript</h2>
+
+<p>Un <b>programa en JavaScript</b> es una lista de <b>sentencias</b> que serán ejecutadas por una computadora.</p>
+
+<p id="demo"></p>
+
+<script>
+let x, y, z;  // Sentencia 1
+x = 5;        // Sentencia 2
+y = 6;        // Sentencia 3
+z = x + y;    // Sentencia 4
+
+document.getElementById("demo").innerHTML =
+"El valor de z es " + z + ".";  
+</script>
+
+<p>En HTML, las sentencias de JavaScript son ejecutadas por el navegador.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hola Dolly.";
+</script>
+
+<p>Las sentencias de JavaScript se separan con punto y coma.</p>
+
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+<p>Se permiten múltiples sentencias en una línea.</p>
+
+<p id="demo1"></p>
+
+<script>
+a = 5; b = 6; c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+<p>El mejor lugar para cortar una línea de código es después de un operador o una coma.</p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Hola Dolly!";
+</script>
+
+<p>Los bloques de código en JavaScript se escriben entre { y }</p>
+
+<button type="button" onclick="myFunction()">¡Haz clic!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "¡Hola Dolly!";
+  document.getElementById("demo2").innerHTML = "¿Cómo estás?";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Display Object
+        document.getElementById("demo").innerHTML = person;
+    </script>
+
+    <p id="demo2"></p>
+
+    <script>
+        // Create an Object
+        const person2 = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Display Properties
+        document.getElementById("demo2").innerHTML = person2.name + ", " + person2.age + ", " + person2.city;
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+        // Create an Object
+        const person3 = {
+            name: "Omar",
+            age: 23,
+            city: "Guasave"
+        };
+
+        // Build a Text
+        let text = "";
+        for (let x in person3) {
+            text += person3[x] + " ";
+        };
+
+        // Display the Text
+        document.getElementById("demo3").innerHTML = text;
+    </script>
+
+    <p>Object.entries() makes it simple to use objects in loops:</p>
+
+    <p id="demo4"></p>
+
+    <script>
+        const fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
+
+        let text2 = "";
+        for (let [fruit, amount] of Object.entries(fruits)) {
+            text2 += fruit + ": " + amount + "<br>";
+        }
+
+        document.getElementById("demo4").innerHTML = text2;
+    </script>
+
+    <p id="demo5"></p>
+
+    <script>
+        // Create an Object
+        const person4 = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Display JSON
+        document.getElementById("demo5").innerHTML = JSON.stringify(person4);
+    </script>
+
+</body>
+
+</html>

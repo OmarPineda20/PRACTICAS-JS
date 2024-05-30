@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        // Constructor Function for Person objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create a Person object
+        const myFather = new Person("John", "Doe", 50, "blue");
+
+        // Display age
+        document.getElementById("demo").innerHTML =
+            "My father is " + myFather.age + "."; 
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo2"></p>
+
+    <script>
+
+        // Constructor function for Person objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create two Person objects
+        const myFather2 = new Person("John", "Doe", 50, "blue");
+        const myMother = new Person("Sally", "Rally", 48, "green");
+
+        // Display age
+        document.getElementById("demo2").innerHTML =
+            "My father is " + myFather2.age + ". My mother is " + myMother.age + ".";
+
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo3"></p>
+
+    <script>
+
+        // Constructor function for Person objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.nationality = "English";
+        }
+
+        // Create 2 Person objects
+        const myFather3 = new Person("John", "Doe", 50, "blue");
+        const myMother2 = new Person("Sally", "Rally", 48, "green");
+
+        // Display nationality
+        document.getElementById("demo3").innerHTML =
+            "My father is " + myFather3.nationality + ". My mother is " + myMother2.nationality; 
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo4"></p>
+
+    <script>
+        // Constructor function for Person objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person objects
+        const myFather4 = new Person("John", "Doe", 50, "blue");
+        const myMother3 = new Person("Sally", "Rally", 48, "green");
+
+        // Add nationality to first object
+        myFather4.nationality = "English";
+
+        // Display nationality 
+        document.getElementById("demo4").innerHTML =
+            "My father is " + myFather4.nationality; 
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+    <h2>Adding a Property to a Constructor</h2>
+
+    <p id="demo5"></p>
+
+    <script>
+        // Constructor function for Person Objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person Objects
+        const myFather5 = new Person("John", "Doe", 50, "blue");
+        const myMother4 = new Person("Sally", "Rally", 48, "green");
+
+        // Will Not Work
+        Person.nationality = "English";
+
+        // Display Nationality
+        document.getElementById("demo5").innerHTML =
+            "The nationality of my father is " + myFather5.nationality; 
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+    <h2>Adding a Property to a Constructor</h2>
+
+    <p id="demo6"></p>
+
+    <script>
+        // Constructor function for Person Objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person Objects
+        const myFather6 = new Person("John", "Doe", 50, "blue");
+        const myMother5 = new Person("Sally", "Rally", 48, "green");
+
+        // Add a new Property
+        Person.prototype.nationality = "English";
+
+        // Display new Property
+        document.getElementById("demo6").innerHTML =
+            "The nationality of my father is " + myFather6.nationality; 
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo7"></p>
+
+    <script>
+        // Constructor Function for Person objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.fullName = function () {
+                return this.firstName + " " + this.lastName
+            };
+        }
+
+        // Create a Person object
+        const myFather7 = new Person("John", "Doe", 50, "blue");
+
+        // Display full name
+        document.getElementById("demo7").innerHTML =
+            "My father is " + myFather7.fullName();
+
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo8"></p>
+
+    <script>
+        // Constructor function for Person Objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person objects
+        const myFather8 = new Person("John", "Doe", 50, "blue");
+        const myMother6 = new Person("Sally", "Rally", 48, "green");
+
+        // Add a Name Method
+        myMother.changeName = function (name) {
+            this.lastName = name;
+        }
+
+        // Change Name
+        myMother.changeName("Doe");
+
+        // Display fullName
+        document.getElementById("demo8").innerHTML =
+            "My mother's last name is " + myMother6.lastName; 
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo9"></p>
+
+    <script>
+        // Display the Type
+        document.getElementById("demo9").innerHTML =
+            "<p>The typeof new Object() is " + typeof new Object() + "</p>" +
+            "<p>The typeof new Array() is " + typeof new Array() + "</p>" +
+            "<p>The typeof new Map() is " + typeof new Map() + "</p>" +
+            "<p>The typeof new Set() is " + typeof new Set() + "</p>" +
+            "<p>The typeof new Date() is " + typeof new Date() + "</p>" +
+            "<p>The typeof new RegExp() is " + typeof new RegExp() + "</p>" +
+            "<p>The typeof new Function() is " + typeof new Function() + "</p>";
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="demo10"></p>
+
+    <script>
+        // Display the type of all
+        document.getElementById("demo10").innerHTML =
+            '<p>The typeof "" is ' + typeof "" + '</p>' +
+            '<p>The typeof 10 is ' + typeof 10 + '</p>' +
+            '<p>The typeof false is ' + typeof false + '</p>' +
+            '<p>The typeof {} is ' + typeof {} + '</p>' +
+            '<p>The typeof [] is ' + typeof [] + '</p>' +
+            '<p>The typeof /()/ is ' + typeof /()/ + '</p>' +
+            '<p>The typeof function(){} is ' + typeof function () { } + '</p>';
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "John Doe";  // String written inside quotes
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        let carName1 = "Volvo XC60"; // Double quotes
+        let carName2 = 'Volvo XC60'; // Single quotes
+
+        document.getElementById("demo2").innerHTML =
+            carName1 + " " + carName2; 
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+    <p id="demo3"></p>
+
+    <script>
+        let answer1 = "It's alright";
+        let answer2 = "He is called 'Johnny'";
+        let answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo3").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3; 
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>With back-ticks, you can use both single and double quotes inside a string:</p>
+
+    <p id="demo4"></p>
+
+    <p>Templates not supported in Internet Explorer.</p>
+
+    <script>
+        let text2 = `He's often called "Johnny"`;
+        document.getElementById("demo4").innerHTML = text2;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The length Property</h2>
+
+    <p>The length of the string is:</p>
+    <p id="demo5"></p>
+
+    <script>
+        let text3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo5").innerHTML = text3.length;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+
+    <p>The escape sequence \" inserts a double quote in a string.</p>
+
+    <p id="demo6"></p>
+
+    <script>
+        let text4 = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("demo6").innerHTML = text4; 
+    </script>
+
+    <h1>JavaScript Strings</h1>
+
+    <p>The escape sequence \' inserts a single quote in a string.</p>
+
+    <p id="demo7"></p>
+
+    <script>
+        let text5 = 'It\'s alright.';
+        document.getElementById("demo7").innerHTML = text5; 
+    </script>
+
+    <h1>JavaScript Strings</h1>
+
+    <p>The escape sequence \\ inserts a backslash in a string.</p>
+
+    <p id="demo8"></p>
+
+    <script>
+        let text6 = "The character \\ is called backslash.";
+        document.getElementById("demo8").innerHTML = text6; 
+    </script>
+
+    <h2>JavaScript Statements</h2>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo9"></p>
+
+    <script>
+        document.getElementById("demo9").innerHTML =
+            "Hello Dolly!";
+    </script>
+
+    <h1>JavaScript Template Strings</h1>
+    <p>Templates allow multiline strings:</p>
+
+    <p id="demo10"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+        let text7 =
+
+            `The quick
+            brown fox
+            jumps over
+            the lazy dog`;
+
+        document.getElementById("demo10").innerHTML = text7;
+    </script>
+
+</body>
+
+</html>
